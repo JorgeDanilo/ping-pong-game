@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#E1F5FE"
+	android:orientation="vertical">
+
+	<androidx.appcompat.widget.LinearLayoutCompat
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<androidx.appcompat.widget.AppCompatImageButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/restart"
+			android:onClick="restart" />
+
+		<View
+			android:layout_width="1dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1" />
+
+		<androidx.appcompat.widget.AppCompatImageButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/exit"
+			android:onClick="exit" />
+
+	</androidx.appcompat.widget.LinearLayoutCompat>
+
+	<androidx.appcompat.widget.LinearLayoutCompat
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center"
+		android:orientation="vertical">
+
+		<TableLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+
+			<TableRow
+				android:layout_width="match_parent"
+				android:gravity="center">
+
+				<androidx.appcompat.widget.AppCompatTextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Your Points: "
+					android:textSize="24sp" />
+
+				<androidx.appcompat.widget.AppCompatTextView
+					android:id="@+id/tvPoints"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					tools:text="50"
+					android:textColor="@android:color/holo_green_dark"
+					android:textSize="50sp" />
+
+			</TableRow>
+
+			<TableRow
+				android:layout_width="match_parent"
+				android:gravity="center">
+
+				<androidx.appcompat.widget.AppCompatTextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Highest: "
+					android:layout_gravity="center|right"
+					android:textSize="24sp" />
+
+				<androidx.appcompat.widget.AppCompatTextView
+					android:id="@+id/tvHighest"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					tools:text="100"
+					android:textColor="@android:color/holo_orange_dark"
+					android:textSize="50sp" />
+
+			</TableRow>
+
+		</TableLayout>
+
+		<View
+			android:layout_width="1dp"
+			android:layout_height="50dp" />
+
+		<androidx.appcompat.widget.AppCompatImageButton
+			android:id="@+id/ivNewHighest"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/new_highest"
+			tools:visibility="g" />
+
+	</androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
